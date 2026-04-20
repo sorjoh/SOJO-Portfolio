@@ -5,7 +5,7 @@ This project is a simple calculator with some extra features currently developed
 <p>
 <img src="https://github.com/sorjoh/SOJO-Portfolio/blob/main/SOJO%20Calculator/VB.NET/Calculator.png" alt="Screenshot 2026-04-20 051609">
 <br>
-Screenshot of the Calculator developed in VB.NET
+Screenshot of the first version of the calculator developed in VB.NET
 </p>
 <br>  
 <br>
