@@ -1,4 +1,4 @@
-# SOJO Calculator made in C#.NET
+# SOJO Calculator (C#.NET)
 
 This project is a simple calculator with some extra features developed in C#.NET.
 

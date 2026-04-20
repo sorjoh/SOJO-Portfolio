@@ -1,4 +1,4 @@
-# SOJO Calculator made in VB
+# SOJO Calculator (VB.NET)
 
 This project is a simple calculator with some extra features developed in VB.NET.
 
