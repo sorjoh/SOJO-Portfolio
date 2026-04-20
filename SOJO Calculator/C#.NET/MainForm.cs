@@ -45,13 +45,13 @@ namespace SOJO_Calculator
             KeyDown += new KeyEventHandler(MainForm_KeyDown);
             KeyPress += new KeyPressEventHandler(MainForm_KeyPress);
 
+            // START: Modern layout
             this.FormBorderStyle = FormBorderStyle.FixedToolWindow ;
             this.Width = this.Width - 2;
             this.Height = this.Height - 5;      
 
             tblResult.Location = new Point(tblResult.Location.X - 3, tblResult.Location.Y - 2);
             tblResult.Width = tblResult.Width + 4;
-
 
             lblPreviousResult.BackColor = SystemColors.ActiveCaptionText;
             lblPreviousResult.ForeColor = SystemColors.ControlLight;
@@ -86,8 +86,7 @@ namespace SOJO_Calculator
                         }
 
                     case "CLEAR":
-                        {
-                            //button.BackColor = Color.FromArgb(64, 64, 64);
+                        {                            
                             button.BackColor = SystemColors.ActiveCaption;
                             button.ForeColor = SystemColors.ControlLightLight;
                             button.Font = new Font("Segoe UI Semibold", Calculator.BASE_FONT_SIZE - 8, FontStyle.Bold);
@@ -128,7 +127,7 @@ namespace SOJO_Calculator
 
                 }
             }
-
+            // END: Modern layout
         }
 
         // ========= MAIN FORM - Control Added =========
