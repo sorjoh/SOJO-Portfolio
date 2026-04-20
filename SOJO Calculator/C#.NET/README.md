@@ -2,10 +2,7 @@
 
 This project is a simple calculator with some extra features developed in C#.NET.
 
-<img src="https://github.com/sorjoh/SOJO-Portfolio/blob/main/SOJO%20Calculator/C%23.NET/Calculator-Modern.png" alt="Screenshot 2026-04-20 051558">
-<br>
-<br>
-<br>
+![Screenshot 2026-04-20 051558](https://github.com/sorjoh/SOJO-Portfolio/blob/main/SOJO%20Calculator/C%23.NET/Calculator-Modern.png)
 
 ## Features
 - **Basic Mathematical Operations:** Addition, subtraction, multiplication, and division.
