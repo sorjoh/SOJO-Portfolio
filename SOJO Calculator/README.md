@@ -4,7 +4,7 @@ This project is a simple calculator with some extra features currently developed
 
 ![Screenshot 2026-04-20 051609](https://github.com/sorjoh/SOJO-Portfolio/blob/main/SOJO%20Calculator/VB.NET/Calculator.png)
 
-![Screenshot 2026-04-20 051558](https://github.com/sorjoh/SOJO-Portfolio/blob/main/SOJO%20Calculator/C%2523.NET/Calculator-Modern.png)
+![Screenshot 2026-04-20 051558](https://github.com/sorjoh/SOJO-Portfolio/blob/main/SOJO%20Calculator/C%23.NET/Calculator-Modern.png)
 
 
 
