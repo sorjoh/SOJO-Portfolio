@@ -14,7 +14,9 @@ Screenshot of the Calculator developed in VB.NET
 <br>
 Screenshot of the calculator with a more modern developed layout in C#.NET
 </p>
-
+<br>
+<br>
+<br>
 
 ## Features
 - **Basic Mathematical Operations:** Addition, subtraction, multiplication, and division.
