@@ -16,6 +16,7 @@ namespace SOJO_Calculator
 
             //ApplicationConfiguration.Initialize();
             Application.Run(mainForm: new MainForm());
+            
         }
     }
 }

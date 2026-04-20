@@ -78,6 +78,7 @@
             btnZero.Name = "btnZero";
             btnZero.Size = new Size(84, 54);
             btnZero.TabIndex = 0;
+            btnZero.Tag = "NUMBERPAD";
             btnZero.Text = "0";
             btnZero.UseVisualStyleBackColor = false;
             btnZero.Click += NumberButton_Click;
@@ -91,6 +92,7 @@
             btnDot.Name = "btnDot";
             btnDot.Size = new Size(84, 54);
             btnDot.TabIndex = 1;
+            btnDot.Tag = "NUMBERPAD";
             btnDot.Text = ".";
             btnDot.UseVisualStyleBackColor = false;
             btnDot.Click += NumberButton_Click;
@@ -104,6 +106,7 @@
             btnToggle.Name = "btnToggle";
             btnToggle.Size = new Size(84, 54);
             btnToggle.TabIndex = 2;
+            btnToggle.Tag = "NUMBERPAD";
             btnToggle.Text = "+/-";
             btnToggle.UseVisualStyleBackColor = false;
             btnToggle.Click += btnToggle_Click;
@@ -117,6 +120,7 @@
             btnThree.Name = "btnThree";
             btnThree.Size = new Size(84, 54);
             btnThree.TabIndex = 5;
+            btnThree.Tag = "NUMBERPAD";
             btnThree.Text = "3";
             btnThree.UseVisualStyleBackColor = false;
             btnThree.Click += NumberButton_Click;
@@ -130,6 +134,7 @@
             btnTwo.Name = "btnTwo";
             btnTwo.Size = new Size(84, 54);
             btnTwo.TabIndex = 4;
+            btnTwo.Tag = "NUMBERPAD";
             btnTwo.Text = "2";
             btnTwo.UseVisualStyleBackColor = false;
             btnTwo.Click += NumberButton_Click;
@@ -143,6 +148,7 @@
             btnOne.Name = "btnOne";
             btnOne.Size = new Size(84, 54);
             btnOne.TabIndex = 3;
+            btnOne.Tag = "NUMBERPAD";
             btnOne.Text = "1";
             btnOne.UseVisualStyleBackColor = false;
             btnOne.Click += NumberButton_Click;
@@ -156,6 +162,7 @@
             btnSix.Name = "btnSix";
             btnSix.Size = new Size(84, 54);
             btnSix.TabIndex = 8;
+            btnSix.Tag = "NUMBERPAD";
             btnSix.Text = "6";
             btnSix.UseVisualStyleBackColor = false;
             btnSix.Click += NumberButton_Click;
@@ -169,6 +176,7 @@
             btnFive.Name = "btnFive";
             btnFive.Size = new Size(84, 54);
             btnFive.TabIndex = 7;
+            btnFive.Tag = "NUMBERPAD";
             btnFive.Text = "5";
             btnFive.UseVisualStyleBackColor = false;
             btnFive.Click += NumberButton_Click;
@@ -182,6 +190,7 @@
             btnFour.Name = "btnFour";
             btnFour.Size = new Size(84, 54);
             btnFour.TabIndex = 6;
+            btnFour.Tag = "NUMBERPAD";
             btnFour.Text = "4";
             btnFour.UseVisualStyleBackColor = false;
             btnFour.Click += NumberButton_Click;
@@ -195,6 +204,7 @@
             btnNine.Name = "btnNine";
             btnNine.Size = new Size(84, 54);
             btnNine.TabIndex = 11;
+            btnNine.Tag = "NUMBERPAD";
             btnNine.Text = "9";
             btnNine.UseVisualStyleBackColor = false;
             btnNine.Click += NumberButton_Click;
@@ -208,6 +218,7 @@
             btnEight.Name = "btnEight";
             btnEight.Size = new Size(84, 54);
             btnEight.TabIndex = 10;
+            btnEight.Tag = "NUMBERPAD";
             btnEight.Text = "8";
             btnEight.UseVisualStyleBackColor = false;
             btnEight.Click += NumberButton_Click;
@@ -221,6 +232,7 @@
             btnSeven.Name = "btnSeven";
             btnSeven.Size = new Size(84, 54);
             btnSeven.TabIndex = 9;
+            btnSeven.Tag = "NUMBERPAD";
             btnSeven.Text = "7";
             btnSeven.UseVisualStyleBackColor = false;
             btnSeven.Click += NumberButton_Click;
@@ -234,6 +246,7 @@
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(84, 54);
             btnDelete.TabIndex = 12;
+            btnDelete.Tag = "CLEAR";
             btnDelete.Text = "DEL";
             btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
@@ -247,6 +260,7 @@
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(84, 54);
             btnClear.TabIndex = 13;
+            btnClear.Tag = "CLEAR";
             btnClear.Text = "CE/C";
             btnClear.UseVisualStyleBackColor = false;
             btnClear.Click += btnClear_Click;
@@ -260,6 +274,7 @@
             btnDivide.Name = "btnDivide";
             btnDivide.Size = new Size(84, 54);
             btnDivide.TabIndex = 15;
+            btnDivide.Tag = "OPERATION";
             btnDivide.Text = "÷";
             btnDivide.UseVisualStyleBackColor = false;
             btnDivide.Click += OperatorButton_Click;
@@ -273,6 +288,7 @@
             btnMultiply.Name = "btnMultiply";
             btnMultiply.Size = new Size(84, 54);
             btnMultiply.TabIndex = 14;
+            btnMultiply.Tag = "OPERATION";
             btnMultiply.Text = "×";
             btnMultiply.UseVisualStyleBackColor = false;
             btnMultiply.Click += OperatorButton_Click;
@@ -286,6 +302,7 @@
             btnSubtract.Name = "btnSubtract";
             btnSubtract.Size = new Size(84, 54);
             btnSubtract.TabIndex = 17;
+            btnSubtract.Tag = "OPERATION";
             btnSubtract.Text = "−";
             btnSubtract.UseVisualStyleBackColor = false;
             btnSubtract.Click += OperatorButton_Click;
@@ -299,6 +316,7 @@
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(84, 54);
             btnAdd.TabIndex = 16;
+            btnAdd.Tag = "OPERATION";
             btnAdd.Text = "+";
             btnAdd.UseVisualStyleBackColor = false;
             btnAdd.Click += OperatorButton_Click;
@@ -312,6 +330,7 @@
             btnEqual.Name = "btnEqual";
             btnEqual.Size = new Size(173, 54);
             btnEqual.TabIndex = 18;
+            btnEqual.Tag = "OPERATION";
             btnEqual.Text = "=";
             btnEqual.UseVisualStyleBackColor = false;
             btnEqual.Click += btnEqual_Click;
@@ -326,6 +345,7 @@
             btnReciprocal.Name = "btnReciprocal";
             btnReciprocal.Size = new Size(84, 38);
             btnReciprocal.TabIndex = 19;
+            btnReciprocal.Tag = "SPECIAL";
             btnReciprocal.Text = "1/x";
             btnReciprocal.UseVisualStyleBackColor = false;
             btnReciprocal.Click += OperatorButton_Click;
@@ -340,6 +360,7 @@
             btnSquare.Name = "btnSquare";
             btnSquare.Size = new Size(84, 38);
             btnSquare.TabIndex = 20;
+            btnSquare.Tag = "SPECIAL";
             btnSquare.Text = "x²";
             btnSquare.UseVisualStyleBackColor = false;
             btnSquare.Click += OperatorButton_Click;
@@ -354,6 +375,7 @@
             btnSquareRoot.Name = "btnSquareRoot";
             btnSquareRoot.Size = new Size(84, 38);
             btnSquareRoot.TabIndex = 21;
+            btnSquareRoot.Tag = "SPECIAL";
             btnSquareRoot.Text = "√";
             btnSquareRoot.UseVisualStyleBackColor = false;
             btnSquareRoot.Click += OperatorButton_Click;
@@ -368,6 +390,7 @@
             btnModulo.Name = "btnModulo";
             btnModulo.Size = new Size(84, 38);
             btnModulo.TabIndex = 22;
+            btnModulo.Tag = "SPECIAL";
             btnModulo.Text = "mod";
             btnModulo.UseVisualStyleBackColor = false;
             btnModulo.Click += OperatorButton_Click;
@@ -382,6 +405,7 @@
             btnPercent.Name = "btnPercent";
             btnPercent.Size = new Size(84, 38);
             btnPercent.TabIndex = 23;
+            btnPercent.Tag = "SPECIAL";
             btnPercent.Text = "%";
             btnPercent.UseVisualStyleBackColor = false;
             btnPercent.Click += OperatorButton_Click;
@@ -396,6 +420,7 @@
             btmRnd.Name = "btmRnd";
             btmRnd.Size = new Size(84, 38);
             btmRnd.TabIndex = 28;
+            btmRnd.Tag = "SPECIAL";
             btmRnd.Text = "rnd";
             btmRnd.UseVisualStyleBackColor = false;
             btmRnd.Click += btnRnd_Click;
@@ -410,6 +435,7 @@
             btnPi.Name = "btnPi";
             btnPi.Size = new Size(84, 38);
             btnPi.TabIndex = 27;
+            btnPi.Tag = "SPECIAL";
             btnPi.Text = "π";
             btnPi.UseVisualStyleBackColor = false;
             btnPi.Click += btnPi_Click;
@@ -424,6 +450,7 @@
             btnCubeRoot.Name = "btnCubeRoot";
             btnCubeRoot.Size = new Size(84, 38);
             btnCubeRoot.TabIndex = 26;
+            btnCubeRoot.Tag = "SPECIAL";
             btnCubeRoot.Text = "∛";
             btnCubeRoot.UseVisualStyleBackColor = false;
             btnCubeRoot.Click += OperatorButton_Click;
@@ -438,6 +465,7 @@
             btnCube.Name = "btnCube";
             btnCube.Size = new Size(84, 38);
             btnCube.TabIndex = 25;
+            btnCube.Tag = "SPECIAL";
             btnCube.Text = "x³";
             btnCube.UseVisualStyleBackColor = false;
             btnCube.Click += OperatorButton_Click;
@@ -452,6 +480,7 @@
             btnPower.Name = "btnPower";
             btnPower.Size = new Size(84, 38);
             btnPower.TabIndex = 24;
+            btnPower.Tag = "SPECIAL";
             btnPower.Text = "^";
             btnPower.UseVisualStyleBackColor = false;
             btnPower.Click += OperatorButton_Click;
@@ -466,6 +495,7 @@
             btnMemorySub.Name = "btnMemorySub";
             btnMemorySub.Size = new Size(84, 38);
             btnMemorySub.TabIndex = 33;
+            btnMemorySub.Tag = "MEMORY";
             btnMemorySub.Text = "M-";
             btnMemorySub.UseVisualStyleBackColor = false;
             btnMemorySub.Click += MemoryButton_Click;
@@ -480,6 +510,7 @@
             btnMemoryAdd.Name = "btnMemoryAdd";
             btnMemoryAdd.Size = new Size(84, 38);
             btnMemoryAdd.TabIndex = 32;
+            btnMemoryAdd.Tag = "MEMORY";
             btnMemoryAdd.Text = "M+";
             btnMemoryAdd.UseVisualStyleBackColor = false;
             btnMemoryAdd.Click += MemoryButton_Click;
@@ -494,6 +525,7 @@
             btnMemoryStore.Name = "btnMemoryStore";
             btnMemoryStore.Size = new Size(84, 38);
             btnMemoryStore.TabIndex = 31;
+            btnMemoryStore.Tag = "MEMORY";
             btnMemoryStore.Text = "MS";
             btnMemoryStore.UseVisualStyleBackColor = false;
             btnMemoryStore.Click += MemoryButton_Click;
@@ -508,6 +540,7 @@
             btnMemoryRecall.Name = "btnMemoryRecall";
             btnMemoryRecall.Size = new Size(84, 38);
             btnMemoryRecall.TabIndex = 30;
+            btnMemoryRecall.Tag = "MEMORY";
             btnMemoryRecall.Text = "MR";
             btnMemoryRecall.UseVisualStyleBackColor = false;
             btnMemoryRecall.Click += MemoryButton_Click;
@@ -522,6 +555,7 @@
             btnMemoryClear.Name = "btnMemoryClear";
             btnMemoryClear.Size = new Size(84, 38);
             btnMemoryClear.TabIndex = 29;
+            btnMemoryClear.Tag = "MEMORY";
             btnMemoryClear.Text = "MC";
             btnMemoryClear.UseVisualStyleBackColor = false;
             btnMemoryClear.Click += MemoryButton_Click;

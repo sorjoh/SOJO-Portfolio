@@ -9,6 +9,7 @@ namespace SOJO_Calculator
     {
 
         public const string DOT_SIGN = ",";
+        public const float BASE_FONT_SIZE = 24f;
 
         // ========= OPERATORS =========
         public enum Operators
@@ -27,6 +28,7 @@ namespace SOJO_Calculator
             CUBE_ROOT,
             RECIPROCAL,
             RND,
+            EQUAL,
 
             NONE
         }
@@ -106,6 +108,11 @@ namespace SOJO_Calculator
                 case Operators.RND:
                     {
                         sign = "rnd";
+                        break;
+                    }
+                case Operators.EQUAL:
+                    {
+                        sign = "=";
                         break;
                     }
             }
@@ -193,6 +200,11 @@ namespace SOJO_Calculator
                 case "rnd":
                     {
                         op = Operators.RND;
+                        break;
+                    }
+                case "=":
+                    {
+                        op = Operators.EQUAL;
                         break;
                     }
 

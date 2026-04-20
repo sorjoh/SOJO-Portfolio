@@ -9,10 +9,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <StartupObject>SOJO_Calculator.Program</StartupObject>
     <ApplicationIcon>Calculator.ico</ApplicationIcon>
+    <PackageIcon>Calculator.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <Content Include="Calculator.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Calculator.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

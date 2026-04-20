@@ -1,6 +1,7 @@
-using System.Diagnostics;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
+using System.Diagnostics;
+using System.Drawing.Drawing2D;
 
 namespace SOJO_Calculator
 {
@@ -35,6 +36,7 @@ namespace SOJO_Calculator
         // Max length of the display numbers
         private const int MAX_LENGTH = 17;
 
+
         public MainForm()
         {
             InitializeComponent();
@@ -42,6 +44,91 @@ namespace SOJO_Calculator
             this.KeyPreview = true;
             KeyDown += new KeyEventHandler(MainForm_KeyDown);
             KeyPress += new KeyPressEventHandler(MainForm_KeyPress);
+
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow ;
+            this.Width = this.Width - 2;
+            this.Height = this.Height - 5;      
+
+            tblResult.Location = new Point(tblResult.Location.X - 3, tblResult.Location.Y - 2);
+            tblResult.Width = tblResult.Width + 4;
+
+
+            lblPreviousResult.BackColor = SystemColors.ActiveCaptionText;
+            lblPreviousResult.ForeColor = SystemColors.ControlLight;
+            lblPreviousResult.Font = new Font("Segoe UI Semibold", Calculator.BASE_FONT_SIZE, FontStyle.Bold);
+
+            lblCurrentResult.BackColor = SystemColors.ActiveCaptionText;
+            lblCurrentResult.ForeColor = SystemColors.ControlLight;
+            lblCurrentResult.Font = new Font("Segoe UI Semibold", Calculator.BASE_FONT_SIZE * 2, FontStyle.Bold);
+
+            lblMemoryStatus.BackColor = SystemColors.ActiveCaptionText;
+            lblMemoryStatus.ForeColor = Color.IndianRed;
+            lblMemoryStatus.Font = new Font("Segoe UI Semibold", Calculator.BASE_FONT_SIZE, FontStyle.Bold);
+
+            foreach (var button in this.Controls.OfType<Button>())
+            {
+                button.FlatStyle = FlatStyle.Flat;
+                button.FlatAppearance.BorderSize = 0;
+                button.Width = button.Width + 4;
+                button.Height = button.Height + 4;
+                button.Location = new Point(button.Location.X - 3, button.Location.Y - 5);
+
+                button.TabStop = false;
+                button.Font = new Font("Segoe UI Semibold", Calculator.BASE_FONT_SIZE - 6, FontStyle.Bold);
+
+                switch (button.Tag)
+                {                    
+                    case "NUMBERPAD":
+                        {
+                            button.BackColor = SystemColors.GrayText;
+                            button.ForeColor = SystemColors.ControlLightLight;                            
+                            break;
+                        }
+
+                    case "CLEAR":
+                        {
+                            //button.BackColor = Color.FromArgb(64, 64, 64);
+                            button.BackColor = SystemColors.ActiveCaption;
+                            button.ForeColor = SystemColors.ControlLightLight;
+                            button.Font = new Font("Segoe UI Semibold", Calculator.BASE_FONT_SIZE - 8, FontStyle.Bold);
+                            break;
+                        }
+
+                    case "OPERATION":
+                        {
+                            if (button.Text == Calculator.getOperatorSign(Calculator.Operators.EQUAL).ToString())
+                            {
+                                button.BackColor = Color.IndianRed;                                
+                            }
+                            else
+                            {
+                                button.BackColor = SystemColors.WindowFrame;
+                            }
+
+                            button.ForeColor = SystemColors.ControlLightLight;
+                            button.Font = new Font("Segoe UI Semibold", Calculator.BASE_FONT_SIZE, FontStyle.Bold);
+                            break;
+                        }
+
+                    case "SPECIAL":
+                        {
+                            button.BackColor = SystemColors.ButtonShadow;
+                            button.ForeColor = SystemColors.ControlLightLight;
+                            button.Font = new Font("Segoe UI Semibold", Calculator.BASE_FONT_SIZE / 2, FontStyle.Regular);
+                            break;
+                        }
+
+                    case "MEMORY":
+                        {
+                            button.BackColor = SystemColors.ActiveBorder;
+                            button.ForeColor = SystemColors.ControlText;
+                            button.Font = new Font("Segoe UI Semibold", Calculator.BASE_FONT_SIZE / 2, FontStyle.Regular);
+                            break;
+                        }
+
+                }
+            }
+
         }
 
         // ========= MAIN FORM - Control Added =========
@@ -1024,13 +1111,12 @@ namespace SOJO_Calculator
         // ========= FONT AUTO-RESIZE =========
         private void AdjustLabelFont(Label targetLabel, bool reset = false)
         {
-            float baseFontSize = 34f; // Default for CurrentResultLabel
-            float minFontSize = 12f;  // Smallest allowed
-
-            if (targetLabel.Name == "lblPeviousResult")
+            float baseFontSize = Calculator.BASE_FONT_SIZE * 2; // Default for CurrentResultLabel
+            float minFontSize = Calculator.BASE_FONT_SIZE / 2;  // Smallest allowed
+                         
+            if (targetLabel.Name == "lblPreviousResult")
             {
-                baseFontSize = 22f;
-                minFontSize = 11f;
+                baseFontSize = Calculator.BASE_FONT_SIZE;                
             }
 
             if (reset || string.IsNullOrEmpty(targetLabel.Text))
