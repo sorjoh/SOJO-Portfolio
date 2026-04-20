@@ -1,12 +1,8 @@
-# SOJO Calculator in VB
+# SOJO Calculator made in VB
 
 This project is a simple calculator with some extra features developed in VB.NET.
 
-<p>
 <img src="https://github.com/sorjoh/SOJO-Portfolio/blob/main/SOJO%20Calculator/VB.NET/Calculator.png" alt="Screenshot 2026-04-20 051609">
-<br>
-Screenshot of the Calculator developed in VB.NET
-</p>
 <br>
 <br>
 <br>

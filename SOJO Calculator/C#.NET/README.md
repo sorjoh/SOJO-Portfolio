@@ -1,12 +1,8 @@
-# SOJO Calculator in C#
+# SOJO Calculator made in C#.NET
 
 This project is a simple calculator with some extra features developed in C#.NET.
 
-<p>
 <img src="https://github.com/sorjoh/SOJO-Portfolio/blob/main/SOJO%20Calculator/C%23.NET/Calculator-Modern.png" alt="Screenshot 2026-04-20 051558">
-<br>
-Screenshot of the calculator with a more modern developed layout in C#.NET
-</p>
 <br>
 <br>
 <br>
