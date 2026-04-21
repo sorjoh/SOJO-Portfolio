@@ -1,16 +1,18 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace SOJO_Calculator
 {
     public class Calculator
-    {
+    {                
+        // Get decimal seperator
+        public static string DOT_SIGN = System.Globalization.CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator;
 
-        public const string DOT_SIGN = ",";
+        // Set the base font size
         public const float BASE_FONT_SIZE = 24f;
 
+        
         // ========= OPERATORS =========
         public enum Operators
         {

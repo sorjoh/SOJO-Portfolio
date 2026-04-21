@@ -1,6 +1,7 @@
 ﻿Public Class Calculator
 
-    Public Const DOT_SIGN As String = ","
+    ' Get decimal seperator
+    Public Shared DOT_SIGN As String = Globalization.CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator
 
     ' ========= OPERATORS =========
     Public Enum Operators
@@ -150,6 +151,7 @@
 
     ' ========= FORMAT VALUE =========
     Public Shared Function FormatValue(ByVal input As String, Optional ByVal forceFormat As Boolean = False) As String
+
         If input.Length > 1 And input.Substring(0, 1) = "0" And input.Contains(DOT_SIGN) = False Then
             Return input.Substring(1)
         ElseIf input.Contains(DOT_SIGN) Then
