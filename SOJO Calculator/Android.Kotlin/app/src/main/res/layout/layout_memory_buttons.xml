@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START: MC MR MS M+ M- -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <Button style="@style/button"
+        android:id="@+id/btn_memory_clear"
+        android:text="@string/memory_clear_text"
+        android:background="@color/colorMemoryFunctionBtnBackground"
+        android:textColor="@color/colorMemoryFunctionBtnText"/>
+
+    <Button style="@style/button"
+        android:id="@+id/btn_memory_recall"
+        android:text="@string/memory_recall_text"
+        android:background="@color/colorMemoryFunctionBtnBackground"
+        android:textColor="@color/colorMemoryFunctionBtnText"/>
+
+    <Button style="@style/button"
+        android:id="@+id/btn_memory_store"
+        android:text="@string/memory_store_text"
+        android:background="@color/colorMemoryFunctionBtnBackground"
+        android:textColor="@color/colorMemoryFunctionBtnText"/>
+
+    <Button style="@style/button"
+        android:id="@+id/btn_memory_add"
+        android:text="@string/memory_add_text"
+        android:background="@color/colorMemoryFunctionBtnBackground"
+        android:textColor="@color/colorMemoryFunctionBtnText"/>
+
+    <Button style="@style/button"
+        android:id="@+id/btn_memory_subtract"
+        android:text="@string/memory_subtract_text"
+        android:background="@color/colorMemoryFunctionBtnBackground"
+        android:textColor="@color/colorMemoryFunctionBtnText"/>
+</LinearLayout><!-- END: MC MR MS M+ M- -->

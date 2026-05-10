@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_launcher_background">#C0C0C0</color>
+    <color name="color_launcher_foreground">#000000</color>
+
+    <color name="colorDisplayBackground">#000000</color>
+    <color name="colorDisplayText">#E3E3E3</color>
+
+    <color name="colorNumberBtnBackground">#6D6D6D</color>
+    <color name="colorNumberBtnText">#FFFFFF</color>
+
+    <color name="colorBasicOperationBtnBackground">#646464</color>
+    <color name="colorBasicOperatorBtnText">#FFFFFF</color>
+
+    <color name="colorEqualBtnBackground">#CD5C5C</color>
+    <color name="colorEqualBtnText">#FFFFFF</color>
+
+    <color name="colorRemoveFunctionBtnBackground">#99B4D1</color>
+    <color name="colorRemoveFunctionBtnText">#FFFFFF</color>
+
+    <color name="colorSpecialFunctionBtnBackground">#A0A0A0</color>
+    <color name="colorSpecialFunctionBtnText">#FFFFFF</color>
+
+    <color name="colorMemoryFunctionBtnBackground">#B4B4B4</color>
+    <color name="colorMemoryFunctionBtnText">#1A192C</color>
+
+    <color name="colorMemoryStatusText">#CD5C5C</color>
+</resources>
