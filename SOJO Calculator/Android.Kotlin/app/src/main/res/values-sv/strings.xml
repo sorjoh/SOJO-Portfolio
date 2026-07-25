@@ -42,4 +42,10 @@
     <string name="do_you_really_want_to_delete_all_history">Vill du verkligen ta bort all historik?</string>
     <string name="yes">Ja</string>
     <string name="no">Nej</string>
+    <string name="not_allowed">Ej tillåtet</string>
+    <string name="about_and_instructions_title">OM OCH INSTRUKTIONER</string>
+    <string name="copyright">©Copyright 2026 SOJO.se.</string>
+    <string name="information_and_instructions">En enkel kalkylator med några extrafunktioner.\n\nGenom att använda ett långt klick på någon av raderna i historiklistan kan man rensa historiken.</string>
+    <string name="i_have_understand">Jag har förstått</string>
+    <string name="don_t_show_this_again">Visa inte detta igen!</string>
 </resources>

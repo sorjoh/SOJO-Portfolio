@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package se.sojo.apps.maths.calculator.core
 
 import android.annotation.SuppressLint
@@ -14,12 +16,13 @@ import android.widget.TextView
 import androidx.annotation.RequiresApi
 import se.sojo.apps.maths.calculator.core.Calculator.Companion.DECIMAL_SEPARATOR
 import se.sojo.apps.maths.calculator.core.Calculator.Companion.MAX_LENGTH
+import se.sojo.apps.maths.calculator.core.Calculator.Companion.NOT_A_NUMBER
 import se.sojo.apps.maths.calculator.core.Calculator.Companion.THOUSAND_SEPARATOR
 import java.util.Locale
 
 fun CharSequence?.tryParse(): Double {
     return try {
-        this.toString().toDouble()
+        this.toString().cleanUpZeroValue().removeThousandSeparator().cleanUpDecimalSeparator().cleanUpMinusSign().toDouble()
     } catch (_: NumberFormatException) {
         0.0
     }
@@ -42,12 +45,29 @@ fun String.cleanUpDecimalSeparator(): String {
 
 // Fix . and .0 to 0.0
 fun String.cleanUpZeroValue(): String {
-    return if (this == ".0")
+    return (if (this == ".0" || this == NOT_A_NUMBER)
             "0"
         else if (this[0] == '.')
             "0" + DECIMAL_SEPARATOR + this.substring(1)
         else
-            this
+            this).replace(NOT_A_NUMBER, "")
+}
+
+fun hideSystemBars(): Int {
+    return View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or
+            View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or
+            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or
+            View.SYSTEM_UI_FLAG_FULLSCREEN or
+            View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+}
+
+fun String.removeOperationSign(): String {
+    return this
+        .replace("²", "")
+        .replace("³", "")
+        .replace("%", "")
+        .replace("√", "")
+        .replace("∛", "")
 }
 
 // ========= FONT AUTO-RESIZE =========
@@ -113,7 +133,7 @@ fun getCurrentLocale(c: Context): Locale? {
 
 // Set margin
 fun View.margin(left: Float? = null, top: Float? = null, right: Float? = null, bottom: Float? = null) {
-    layoutParams<android.view.ViewGroup.MarginLayoutParams> {
+    layoutParams<ViewGroup.MarginLayoutParams> {
         left?.run { leftMargin = dpToPx(this) }
         top?.run { topMargin = dpToPx(this) }
         right?.run { rightMargin = dpToPx(this) }
@@ -135,9 +155,3 @@ fun getScreenWidth(): Int {
 fun getScreenHeight(): Int {
     return Resources.getSystem().displayMetrics.heightPixels
 }
-
-
-
-
-
-

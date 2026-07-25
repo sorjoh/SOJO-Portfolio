@@ -62,10 +62,6 @@ private fun MainActivity.memoryButtonAction(btn: Button, motionEvent: MotionEven
                         tvCurrentResult?.text = "0"
                     } else {
                         tvCurrentResult?.text = Calculator.formatValue(memoryValue.toString(), true)
-                        //if (currentOperator != Calculator.Operator.NONE || previousOperator != Calculator.Operator.NONE) {
-                        //    tvPreviousResult?.text = ""
-                        //    hasResult = true
-                        //}
                     }
 
                     if (hasResult)

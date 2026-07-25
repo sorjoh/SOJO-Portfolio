@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_history_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/default_history_result_text"
+    android:textAlignment="textEnd"
+    android:gravity="bottom|end"
+    android:textSize="20sp"
+    android:textColor="@color/colorHistoryResultText">
+</TextView>

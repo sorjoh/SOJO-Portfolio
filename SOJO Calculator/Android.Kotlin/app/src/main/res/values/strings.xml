@@ -42,4 +42,11 @@
     <string name="do_you_really_want_to_delete_all_history">Do you really want to delete all history?</string>
     <string name="yes">YES</string>
     <string name="no">NO</string>
+    <string name="not_allowed">Not allowed</string>
+    <string name="about_and_instructions_title">ABOUT AND INSTRUCTIONS</string>
+    <string name="copyright">©Copyright 2026 SOJO.se.</string>
+    <string name="information_and_instructions">A simple calculator with some extra features.\n\nBy using a long click on any of the items in the history list, you can clear the history.</string>
+    <string name="i_have_understand">I have understand</string>
+    <string name="don_t_show_this_again">Don\'t show this again!</string>
+    <string name="nan">NaN</string>
 </resources>
