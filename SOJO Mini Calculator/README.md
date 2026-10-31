@@ -13,13 +13,13 @@ Screenshot of the first version of the mini calculator developed in VB.NET
 <p>
 <img src="https://github.com/sorjoh/SOJO-Mini-Calculator-CS.NET/blob/main/MiniCalculator.png" alt="Screenshot 2026-10-23 011609">
 <br>
-Screenshot of the first version of the mini calculator developed in C#.NET
+Screenshot of the mini calculator developed in C#.NET
 </p>
 
 <p>
-<img src="https://github.com/sorjoh/SOJO-Mini-Calculator-Java/blob/main/MiniCalculator.png" alt="Screenshot 2026-10-31 011609">
+<img src="https://github.com/sorjoh/SOJO-Mini-Calculator-Java/blob/master/MiniCalculator.png" alt="Screenshot 2026-10-31 011609">
 <br>
-Screenshot of the first version of the mini calculator developed in Java and tested in Java 23.0.2.
+Screenshot of the mini calculator developed in Java and tested in Java 23.0.2.
 </p>
 
 ## Features
