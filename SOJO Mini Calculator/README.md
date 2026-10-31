@@ -25,7 +25,7 @@ Screenshot of the mini calculator developed in Java and tested in Java 23.0.2.
 <p>
 <img src="https://github.com/sorjoh/SOJO-Portfolio/blob/main/SOJO%20Mini%20Calculator/Java/_Flowcharts%20And%20Diagrams_/Sequence%20Diagrams/PNG/00%20Mini%20Calculator%20-%20Complete%20Sequence%20Diagram.png" alt="Screenshot 2026-10-31 011609">
 <br>
-Screenshot of the mini calculator developed in Java and tested in Java 23.0.2.
+Sequence Diagram of the Java version of the Mini Calculator.
 </p>
 
 ## Features
