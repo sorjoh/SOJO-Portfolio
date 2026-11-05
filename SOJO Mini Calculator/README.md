@@ -23,7 +23,7 @@ Screenshot of the mini calculator developed in Java and tested in Java 23.0.2.
 </p>
 
 <p>
-![Screenshot 2026-11-05 171609](https://github.com/sorjoh/SOJO-Mini-Calculator-WearOS/blob/master/wearable_square.png) &nbsp; &nbsp; ![Screenshot 2026-11-05 171609](https://github.com/sorjoh/SOJO-Mini-Calculator-WearOS/blob/master/wearable_round.png)
+<img src="https://github.com/sorjoh/SOJO-Mini-Calculator-WearOS/blob/master/wearable_square.png" alt="Screenshot 2026-11-05 171609"> &nbsp; &nbsp; <img src="https://github.com/sorjoh/SOJO-Mini-Calculator-WearOS/blob/master/wearable_round.png" alt="Screenshot 2026-11-05 171609">
 <br>
 Screenshot of the mini calculator developed in Kotlin for wearable devices using android.
 </p>
